@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Corrected link to custom.css -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <h1>Score Calculator</h1>
+    
+    <!-- Button to start the input and calculation process -->
+    <button type="button" onclick="calculateGrade();">Start Calculation</button>
+
+    <h2 id="result"></h2>
+    <h3 id="status"></h3>
+    
+    <h1>Welcome to the Calculator and Grade Checker</h1>
+
+    <!-- Button to compute two numbers -->
+    <button type="button" onclick="inputTwoNumbers();">Compute Two Numbers</button>
+
+    <!-- Button to check if pass or fail -->
+    <button type="button" onclick="checkGrade();">Check Pass or Fail</button>
+    <h2 id="computeResult"></h2>
+
+    <h1 id="result"></h1>
+    <h2 class="output"></h2>
+    <h3 id="outputName"></h3>
+
+    <button type="button" onclick="alert(computeTwoNumber(10,15));">Click Me</button>
+    <button type="button" onclick="confirmSubmission();">Click You</button>
+
+    <h3 id="compute"></h3>
+
+    <!-- Corrected link to custom.js -->
+    <script src="custom.js"></script>
+
+    <script type="text/javascript">
+        document.write("HELLO WORLD");
+        console.log("HELLO WORLD");
+        //alert("HELLO WORLD");
+
+        let name = "JOHN LESTER";
+        var age = 21;
+        const remarks = " STUDENT"; 
+        
+        document.write("<br>");
+        document.write(name + " " + age + " " + remarks);
+
+        document.getElementById("result").innerHTML = name + " " + age + " " + remarks;
+        document.getElementsByClassName("output")[0].innerHTML = name + " " + age + " " + remarks;
+        document.getElementById("outputName").innerHTML = displayName("john lester");
+
+        document.write("<br>");
+        document.write(displayName("JOHN LESTER "));
+
+        console.log(computeTwoNumber(10,15));
+        document.write(computeTwoNumber(10,15));
+        //alert(computeTwoNumber(10,15));
+        document.getElementById("compute").innerHTML = computeTwoNumber(10,15);
+    </script>
+</body>
+</html>

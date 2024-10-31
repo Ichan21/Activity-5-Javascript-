@@ -1,0 +1,70 @@
+/* Overall body styling */
+body {
+    font-family: 'Century Gothic', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* warm red-orange gradient */
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Button container styling for centered Instagram-like layout */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Button styling */
+button {
+    background: linear-gradient(135deg, #fd1d1d, #fcb045); /* vibrant Instagram-like gradient */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50px; /* fully rounded for Instagram look */
+    box-shadow: 0px 6px 10px rgba(252, 176, 69, 0.4); /* soft shadow with orange tint */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 200px; /* fixed width for Instagram look */
+    text-align: center;
+}
+
+/* Button hover effect */
+button:hover {
+    background: linear-gradient(135deg, #fcb045, #fd1d1d); /* reverse gradient on hover */
+    transform: translateY(-3px); /* slight lift */
+    box-shadow: 0px 8px 12px rgba(252, 176, 69, 0.5); /* deeper shadow */
+}
+
+/* Button active effect */
+button:active {
+    transform: scale(0.96);
+    box-shadow: 0px 4px 8px rgba(252, 176, 69, 0.3); /* softer shadow when pressed */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .button-container {
+        width: 100%;
+    }
+
+    button {
+        width: 90%; /* Full width on smaller screens */
+        padding: 10px;
+    }
+}
